@@ -3,11 +3,29 @@
 
 #include <iostream>
 using namespace std;
+
+bool soHoanThien(int n)
+{
+	
+	if((int)sqrt(n) == sqrt(n))
+		return true;
+	return false;
+}
 int main()
 {
 	int n;
     cout << "Nhap mot so nguyen";
 	cin >> n;
+	if(soHoanThien(n))
+	{
+		cout << "N la so hoan thien";
+	}else{
+		cout << "N khong la so hoan thien";
+	}
+	
+
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
