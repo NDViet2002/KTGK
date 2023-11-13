@@ -3,11 +3,31 @@
 
 #include <iostream>
 using namespace std;
+
+bool soChinhPhuong(int n)
+{
+	int s =0;
+	for(int i =1; i< n; i++)
+	{
+		if(n%i ==0)
+			s++;
+	}
+	if(s== n)
+		return true;
+	return false;
+	
+}
 int main()
 {
 	int n;
     cout << "Nhap mot so nguyen";
 	cin >> n;
+	if(soChinhPhuong(n))
+	{
+		cout << "N la so chinh phuong";
+	}else{
+		cout << "N khong la so chinh phuong";
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
